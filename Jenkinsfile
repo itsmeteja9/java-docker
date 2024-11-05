@@ -13,15 +13,7 @@ pipeline {
 
     stages { 
 
-        stage('Cloning our Git') { 
-
-            steps { 
-
-                git 'https://github.com/itsmeteja9/java-docker.git' 
-
-            }
-
-        } 
+       
 
         stage('Building our image') { 
 
