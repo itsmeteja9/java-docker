@@ -13,7 +13,15 @@ pipeline {
 
     stages { 
 
-       
+        stage('Compile and Build Jar') { 
+
+            steps { 
+
+                bat 'mvn clean install'
+
+            }
+
+        } 
 
         stage('Building our image') { 
 
